@@ -19,13 +19,6 @@
 - Click "load unpacked"
 - Find where you downloaded the project
 
-## Usage example
-
-![]()
-PICTURE
-
-> _For more examples and usage, please refer to the [Wiki](https://github.com/Diego-Lopes-Ferreira/)._
-
 ## :computer: Development setup
 
 Its suposed to just work fine without any configurations
