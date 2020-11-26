@@ -1,0 +1,190 @@
+#editable ul,
+ol {
+  padding: 0 0 0 10px;
+}
+#editable li {
+  list-style-position: inside;
+}
+#editable li.haveinput {
+  display: block;
+  list-style: none;
+}
+#editable p {
+  display: inline-block;
+}
+#editable a {
+  color: inherit;
+}
+#editable a:hover {
+  font-style: italic;
+}
+#editable input:checked {
+  background-color: #000;
+}
+
+/* ! NOT MY CODE :)  */
+/* * credits: https://github.com/mrmrs/fluidity */
+#editable pre,
+#editable code {
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+#editable pre {
+  padding: 0.5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+@media print {
+  #editable *,
+  #editable *:before,
+  #editable *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  #editable a,
+  #editable a:visited {
+    text-decoration: underline;
+  }
+  #editable a[href]:after {
+    content: ' (' attr(href) ')';
+  }
+  #editable abbr[title]:after {
+    content: ' (' attr(title) ')';
+  }
+  #editable a[href^='#']:after,
+  #editable a[href^='javascript:']:after {
+    content: '';
+  }
+  #editable pre,
+  #editable blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  #editable thead {
+    display: table-header-group;
+  }
+  #editable tr,
+  #editable img {
+    page-break-inside: avoid;
+  }
+  #editable img {
+    max-width: 100% !important;
+  }
+  #editable p,
+  #editable h2,
+  #editable h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  #editable h2,
+  #editable h3 {
+    page-break-after: avoid;
+  }
+}
+#editable a,
+#editable a:visited {
+  color: #01ff70;
+}
+#editable a:hover,
+#editable a:focus,
+#editable a:active {
+  color: #2ecc40;
+}
+#editable .retro-no-decoration {
+  text-decoration: none;
+}
+#editable html {
+  font-size: 12px;
+}
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  #editable html {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 48rem) {
+  #editable html {
+    font-size: 16px;
+  }
+}
+#editable body {
+  line-height: 1.85;
+}
+#editable p,
+#editable .retro-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+#editable h1,
+#editable .retro-h1,
+#editable h2,
+#editable .retro-h2,
+#editable h3,
+#editable .retro-h3,
+#editable h4,
+#editable .retro-h4 {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+#editable h1,
+#editable .retro-h1 {
+  margin-top: 0;
+  font-size: 3rem;
+}
+#editable h2,
+#editable .retro-h2 {
+  font-size: 2.827rem;
+}
+#editable h3,
+#editable .retro-h3 {
+  font-size: 1.999rem;
+}
+#editable h4,
+#editable .retro-h4 {
+  font-size: 1.414rem;
+}
+#editable h5,
+#editable .retro-h5 {
+  font-size: 1.121rem;
+}
+#editable h6,
+#editable .retro-h6 {
+  font-size: 0.88rem;
+}
+#editable small,
+#editable .retro-small {
+  font-size: 0.707em;
+}
+#editable img,
+#editable canvas,
+#editable iframe,
+#editable video,
+#editable svg,
+#editable select,
+#editable textarea {
+  max-width: 100%;
+}
+#editable html,
+#editable body {
+  background-color: #222;
+  min-height: 100%;
+}
+#editable {
+  font-size: 14px;
+}
+#editable body {
+  color: #fafafa;
+  font-family: 'Courier New';
+  line-height: 1.45;
+  margin: 6rem auto 1rem;
+  max-width: 48rem;
+  padding: 0.25rem;
+}
+#editable pre {
+  background-color: #333;
+}
+#editable blockquote {
+  border-left: 3px solid #01ff70;
+  padding-left: 1rem;
+}

@@ -1,0 +1,114 @@
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000077;
+
+
+  display: none;
+}
+.modal {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+}
+.modal p {
+  color: #f0f0f0;
+  margin: 0 0 20px 0;
+}
+
+.modal input {
+  background-color: transparent;
+  color: #f0f0f077;
+  border: none;
+  border-bottom: 1px solid #f0f0f077;
+  outline: none;
+  padding: 5px 10px;
+  margin: 0 0 20px 0;
+}
+.modal input:active,
+.modal input:hover,
+.modal input:focus {
+  color: #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  outline: none;
+}
+.modal button {
+  background: none;
+  color: #f0f0f077;
+  border: 1px solid #f0f0f077;
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+.modal button:hover {
+  background: none;
+  color: #f0f0f0;
+  border: 1px solid #f0f0f077;
+}
+
+.modal div {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0 20px 0;
+}
+.modal div span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
+.modal div span.selected {
+  box-sizing: border-box;
+  border: 2px solid #f0f0f0;
+}
+.modal div span#gray {
+  background-color: #313f59;
+}
+.modal div span#yellow {
+  background-color: #c8d600;
+}
+.modal div span#green {
+  background-color: #0e8008;
+}
+.modal div span#purple {
+  background-color: #7f1185;
+}
+.modal div span#blue {
+  background-color: #304773;
+}
+.modal input {
+  width: 200px;
+}
+
+.appear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: diegoAnimation 0.5s;
+}
+.out {
+  animation: diegoAnimation 0.5s reverse;
+}
+@keyframes diegoAnimation {
+  0% {
+    transform: translateY(200vh);
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}

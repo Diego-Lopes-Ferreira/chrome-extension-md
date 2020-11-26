@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  background: none;
+  color: #c9c9c9;
+  border: 1px solid #c9c9c9;
+  padding: 5px 10px;
+
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  transition: 0.2s;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button:hover {
+  background: #c9c9c9;
+  color: #181818;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #3e4040;
+  background-color: #1e1f1f;
+  overflow: hidden;
+  background-color: #253237;
+  color: #e2e2e2;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #1e1f1f;
+  background: linear-gradient(135deg, #1e1f1f 0%, #3e4040 100%);
+}
+.left {
+  width: 280px;
+  height: 560px;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  width: 500px;
+  height: 560px;
+}
+#editable {
+  padding: 10px;
+  background-color: #3e4040;
+  border-radius: 20px;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #c9c9c9;
+}
+::-webkit-scrollbar-thumb {
+  background: #757575;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #424242;
+}
+
+#list {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.note-list-item {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #f0f0f0;
+  border-radius: 10px 0 0 10px;
+}
+.note-list-item.selected {
+  box-sizing: border-box;
+  border-right: 3px solid #f0f0f0;
+}
+.note-list-item p {
+  flex: 1;
+  padding: 10px 0;
+  text-shadow: 2px 2px 8px #00000077;
+}
+.note-list-item svg {
+  color: #e2e2e2b9;
+  width: 20px;
+  height: 20px;
+}
+.note-list-item svg:hover {
+  color: #e2e2e2;
+}
+.note-list-item button {
+  width: 30px;
+  height: 30px;
+  border-radius: 25%;
+  background: none;
+  color: #e2e2e200;
+  border: 1px solid #e2e2e200;
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.note-list-item button:hover {
+  color: #e2e2e2;
+  border: 1px solid #e2e2e2;
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  width: 100%;
+  height: 97%;
+  resize: none;
+  border-radius: 20px 0 0 20px;
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+}
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #757575;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #424242;
+}

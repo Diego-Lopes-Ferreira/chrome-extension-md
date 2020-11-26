@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./dist/index.css">
+  <link rel="stylesheet" href="./dist/modal.css">
+  <link rel="stylesheet" href="./dist/markdown.css">
+  <title>Markdown Notes</title>
+</head>
+
+<body>
+
+  <div class="left">
+
+    <button id="create-new">Create New Note</button>
+    <div id="list"></div>
+    <button id="press">RESET HERE</button>
+    <!-- <button id="foo">FOO</button> -->
+    <div>
+      <!-- <button id="delete">delete</button> -->
+      <button id="save">save</button>
+      <button id="edit">edit</button>
+    </div>
+
+  </div>
+  <div class="right">
+
+    <div id="editable"></div>
+
+  </div>
+
+  <div class="modal-wrapper" id="create">
+    <div class="modal">
+      <p>Create Note</p>
+      <input id="modal-name" autocomplete="off" type="search" placeholder="Name">
+      <div>
+        <span class="#313f59" id="gray"></span>
+        <span class="#c8d600" id="yellow"></span>
+        <span class="#0e8008" id="green"></span>
+        <span class="#7f1185" id="purple"></span>
+        <span class="#304773" id="blue"></span>
+      </div>
+      <button id="cancel-modal">Cancel</button>
+      <button id="create-modal">Create :)</button>
+    </div>
+  </div>
+
+  <div class="modal-wrapper" id="edit">
+    <div class="modal">
+      <p>Edit Note</p>
+      <input id="modal-name" autocomplete="off" type="search" placeholder="Name">
+      <div>
+        <span class="#313f59" id="gray"></span>
+        <span class="#c8d600" id="yellow"></span>
+        <span class="#0e8008" id="green"></span>
+        <span class="#7f1185" id="purple"></span>
+        <span class="#304773" id="blue"></span>
+      </div>
+      <button id="cancel-modal">Cancel</button>
+      <button id="edit-modal">Save</button>
+    </div>
+  </div>
+
+  <!-- * Independent External -->
+  <script src="./scripts/marked.min.js"></script>
+
+  <!-- * Independent -->
+  <script src="./scripts/confirm-modal.js"></script>
+
+  <!-- * Independent -->
+  <script src="./scripts/span-selector.js"></script>
+
+  <!-- * Independent -->
+  <script src="./scripts/markdown-fix.js"></script>
+
+  <!-- * Independent -->
+  <script src="./scripts/get-note-contents.js"></script>
+
+  <!-- * Independent -->
+  <script src="./scripts/modal-toggler.js"></script>
+
+  <!-- ! Dependent: "get-note-contents" -->
+  <script src="./scripts/reset-info.js"></script>
+
+  <!-- ! Dependent: "get-note-contents" "modal-toggler" -->
+  <script src="./scripts/crud.js"></script>
+
+  <!-- ! Dependent: "get-note-contents" "modal-toggler" "crud" -->
+  <script src="./scripts/list-of-notes.js"></script>
+
+  <!-- ! Dependent: "get-note-contents" "modal-toggler" "crud" "list-of-notes" "marked" "markdown-fix" -->
+  <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
