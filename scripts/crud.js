@@ -32,6 +32,7 @@ function save() {
     }
   }
   localStorage.setItem(localStorageKey, JSON.stringify(notes)); // ! localStorageKey from 'get-note-contents'
+  log();
 }
 
 function createNewNote() {
