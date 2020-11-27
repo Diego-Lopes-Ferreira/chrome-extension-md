@@ -21,10 +21,15 @@ function log() {
       content = note.content;
     }
   }
-  htmlArea.innerHTML = marked(content); // ! marked from 'marked.js'
-  createListOfNotes(); // ! createListOfNotes from 'list-of-notes'
-  fixEveryCheckboxWithListStyle(); // ! fixEveryCheckboxWithListStyle from 'markdown-fix'
+
+  let markedContent = marked(content); // ! marked from 'marked.js'
+
   fixAnchorsToBeTargetBlank(); // ! fixAnchorsToBeTargetBlank from 'markdown-fix'
+  let fixedMarkedContent = fixReplaceEveryInputTypeChecked(markedContent);
+
+  htmlArea.innerHTML = fixedMarkedContent;
+
+  createListOfNotes(); // ! createListOfNotes from 'list-of-notes'
 
   document.querySelector('.modal-wrapper#edit').classList.remove('appear');
   document.querySelector('.modal-wrapper#create').classList.remove('appear');

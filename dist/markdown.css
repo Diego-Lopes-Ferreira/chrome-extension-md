@@ -18,8 +18,23 @@ ol {
 #editable a:hover {
   font-style: italic;
 }
-#editable input:checked {
-  background-color: #000;
+
+.checkbox-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox-icon.checked {
+  fill: none;
+  stroke: #91ec91;
+  stroke: #e2e2e2;
+  stroke-width: 2px;
+}
+
+.checkbox-icon.not-checked {
+  fill: none;
+  stroke: #e2e2e2;
+  stroke-width: 2px;
 }
 
 /* ! NOT MY CODE :)  */

@@ -1,23 +1,20 @@
 // @ts-nocheck
 
-// * Fix checkbox with list style :)
-
-// fixEveryCheckboxWithListStyle();
-// window.addEventListener('click', fixEveryCheckboxWithListStyle);
-function fixEveryCheckboxWithListStyle() {
-  let everyLi = document.querySelectorAll('#editable li');
-  for (let li of everyLi) {
-    try {
-      if (li.children[0].children[0].tagName === 'INPUT') {
-        li.classList.add('haveinput');
-      }
-    } catch (err) {}
-    try {
-      if (li.children[0].tagName === 'INPUT') {
-        li.classList.add('haveinput');
-      }
-    } catch (err) {}
-  }
+function fixReplaceEveryInputTypeChecked(content) {
+  console.log('');
+  console.log('Initiating function ...');
+  console.log(content);
+  // * Replace empty checkbox
+  let regexForEmptyInput = '<li><input disabled="" type="checkbox">';
+  let substituteForEmptyCheckbox = '<li class="haveinput"><svg viewBox="0 0 24 24" class="checkbox-icon not-checked"><circle cx="12" cy="12" r="10"></circle></svg>';
+  content = content.replaceAll(regexForEmptyInput, substituteForEmptyCheckbox);
+  // * Replace marked checkbox
+  let regexForCheckedInput = '<li><input checked="" disabled="" type="checkbox">';
+  let substituteForCheckedCheckbox = '<li class="haveinput"><svg viewBox="0 0 24 24" class="checkbox-icon checked"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline class="checkmark" points="22 4 12 14.01 9 11.01"></polyline></svg>';
+  content = content.replaceAll(regexForCheckedInput, substituteForCheckedCheckbox);
+  console.log('replacing');
+  console.log(content);
+  return content;
 }
 
 // * Fix checkbox not marking itself
