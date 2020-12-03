@@ -85,26 +85,45 @@ body {
   overflow: auto;
 }
 .note-list-item {
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
+  padding: 10px 10px;
   margin: 10px 0;
+  cursor: pointer;
+
   font-size: 18px;
-  color: #f0f0f0;
-  border-radius: 10px 0 0 10px;
+  color: #e2e2e2;
+
+  border: 1px solid #424242;
+  border-radius: 20px;
+
+  transition: all 0.25s;
 }
 .note-list-item.selected {
   box-sizing: border-box;
-  border-right: 3px solid #f0f0f0;
+  animation: appearBackgroundColor 0.25s;
+  background-color: #424242;
+}
+@keyframes appearBackgroundColor {
+  from {
+    background-color: #253237;
+  }
+  to {
+    background-color: #424242;
+  }
+}
+.note-list-item .note-color-ball {
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
 }
 .note-list-item p {
   flex: 1;
-  padding: 10px 0;
-  text-shadow: 2px 2px 8px #00000077;
+  padding: 10px 0 10px 10px;
+  /* text-shadow: 2px 2px 8px #00000077; */
 }
 .note-list-item svg {
   color: #e2e2e2b9;

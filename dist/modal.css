@@ -6,7 +6,6 @@
   height: 100vh;
   background-color: #00000077;
 
-
   display: none;
 }
 .modal {
@@ -65,12 +64,12 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  transition: 0.2s;
 }
 .modal div span.selected {
   box-sizing: border-box;
   border: 2px solid #f0f0f0;
 }
+/*
 .modal div span#gray {
   background-color: #313f59;
 }
@@ -86,6 +85,7 @@
 .modal div span#blue {
   background-color: #304773;
 }
+*/
 .modal input {
   width: 200px;
 }

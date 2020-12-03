@@ -1,6 +1,6 @@
 // @ts-nocheck
 let btn = document.querySelector('#press');
-let colors = ['#C8D600', '#0E8008', '#7F1185', '#313F59', '#304773'];
+let colors = ['#0E8008', '#1F1BE6', '#800880', '#808080', '#A9AF04'];
 try {
   btn.onclick = () => {
     localStorage.setItem(
@@ -166,25 +166,25 @@ Right aligned columns
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
         `,
-          color: '#c8d600',
+          color: '#A9AF04',
         },
         {
           id: '0002',
           name: 'note 3',
           content: `# note 3 title`,
-          color: '#7f1185',
+          color: '#800880',
         },
         {
           id: '0003',
           name: 'note 4',
           content: `# note 4 title`,
-          color: '#313f59',
+          color: '#808080',
         },
         {
           id: '0004',
           name: 'note 5',
           content: `# note 5 title`,
-          color: '#304773',
+          color: '#1F1BE6',
         },
       ])
     );
