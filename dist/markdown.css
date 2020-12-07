@@ -4,6 +4,10 @@ ol {
 }
 #editable li {
   list-style-position: inside;
+  padding: 5px 0;
+}
+#editable li p {
+  display: inline;
 }
 #editable li.haveinput {
   display: block;
